@@ -1,50 +1,17 @@
 <template>
-  <div style=" background:	#E6E6FA">
-    <div class="nav" style=" height:10vh; width:100%">
-      <div style=" width:25%; float:right">
-        <v-row style=" width:40%; margin-left:100px">
-          <v-col>
-            <a href="https://www.linkedin.com/in/oluwamayowa-oseni-b04011172/">
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/linkedin.svg"
-              ></v-img>
-            </a>
-          </v-col>
-          <v-col>
-            <a href="https://twitter.com/Mayowa_titi">
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/twitter.svg"
-              ></v-img>
-            </a>
-          </v-col>
-          <v-col>
-            <a href="https://instagram.com/mayowa_titi">
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/instagram.svg"
-              ></v-img>
-            </a>
-          </v-col>
-        </v-row>
-      </div>
-    </div>
-    <section class="home" style="height:70vh; width:100%">
+  <div style=" background-image: linear-gradient(to right, #e6e6fa, white);">
+    <section class="home  mx-auto" style="height:70vh; width:95%">
       <v-row
         class="mx-auto"
         justify="center"
         style="text-align:center; color:black"
       >
-        <v-card class="mt-2" style="height:62vh; width:95%; background:	#98FB98">
+        <v-card
+          class="mt-10"
+          style="height:62vh; width:95%; background:	#FDF5E6; border-radius:200px"
+        >
           <v-card-text style="height:100%">
-            <v-row class="mx-auto" style="height:100%">
+            <v-row class="mx-auto" style="height:100%;">
               <v-col cols="8">
                 <div style="margin-top:80px; width:60%; margin-left:120px">
                   <h2
@@ -58,12 +25,16 @@
                     Dicta officia neque aperiam iste, deserunt enim quibusdam
                     nemo quisquam laboriosam perspiciatis est. Sunt culpa
                     pariatur dolores consequuntur nam, commodi distinctio
-                    minima.
+                    minima. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quas sunt placeat totam fugiat unde saepe possimus
+                    dolorum inventore, eligendi ducimus porro autem vel
+                    laudantium aspernatur nam animi officiis error earum.
                   </p>
                 </div>
               </v-col>
               <v-col cols="4">
                 <v-img
+                  class="mt-4"
                   height="400px"
                   width="400px"
                   style="border-radius:200px"
@@ -76,13 +47,16 @@
         </v-card>
       </v-row>
     </section>
-    <section style="height:70vh">
+    <section class="mx-auto" style="height:70vh">
       <v-row
         class="mx-auto"
         justify="center"
         style="text-align:center; color:black"
       >
-        <v-card class="mt-2" style="height:62vh; width:95%; background:	#98FB98">
+        <v-card
+          class="mt-10"
+          style="height:62vh; width:95%; background:	#FDF5E6;border-radius:20px"
+        >
           <v-card-text style="height:100%">
             <v-row class="mx-auto" style="height:100%">
               <v-col cols="6">
@@ -94,7 +68,7 @@
               </v-col>
               <v-col cols="6">
                 <p
-                  style="font-size:20px; margin-top:100px; text-align: justify;"
+                  style="font-size:20px; margin-top:70px; text-align: justify;"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Minima, eius provident atque quasi recusandae fugiat numquam
@@ -112,13 +86,17 @@
 
                 <v-row style="width:100%" class="mt-6">
                   <v-col cols="6">
-                    <v-btn @click="goToAbout">Read more</v-btn>
+                    <v-btn style="background:#8A2BE2" rounded @click="goToAbout"
+                      >Read more</v-btn
+                    >
                   </v-col>
                   <v-col cols="6">
                     <a
                       download="CV.pdf"
                       :href="require('../../public/assets/CV.pdf')"
-                      ><v-btn>Download CV </v-btn></a
+                      ><v-btn style="background:#8A2BE2" rounded
+                        >Download CV
+                      </v-btn></a
                     >
                   </v-col>
                 </v-row>
@@ -128,26 +106,26 @@
         </v-card>
       </v-row>
     </section>
-    <section style="height:70vh">
+    <section class="mx-auto" style="height:70vh;width:95%">
       <v-row
         class="mx-auto"
         justify="center"
         style="text-align:center; color:black"
       >
         <v-card
-          class="mt-2"
-          style="height:62vh; width:95%;  background:	#98FB98"
+          class="mt-10"
+          style="height:62vh; width:95%;  background:	#FDF5E6;border-radius:200px"
         >
           <v-card-text class="mt-6 mx-auto" style=" width:70%">
             <h2>Skills</h2>
-            <p class="mt-3">
+            <p class="mt-3" style="font-size:16px">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus deserunt repellendus perspiciatis veritatis.
               Sapiente neque, rem aliquid qui aperiam magni autem provident,
               dolore nobis minus maxime consequatur. Quisquam, quidem magnam!
             </p>
           </v-card-text>
-          <v-card-text style="height:70%">
+          <v-card-text style="height:60%">
             <v-row class="mx-auto" style="height:100%">
               <v-carousel
                 hide-delimiters
@@ -225,6 +203,7 @@ export default {
 a:hover {
   background-color: transparent;
 }
+
 /* .home {
     background: url("../assets/piqsels.com-id-zwfiw.jpg") no-repeat center center fixed;
     background-size: cover;

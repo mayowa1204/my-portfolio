@@ -1,12 +1,49 @@
 <template>
   <v-app id="inspire">
+    <!-- <div class="nav" style=" height:8vh; width:90%; float:right; background:#E6E6FA">
+      <div style=" width:25%; float:right">
+        <v-row style=" width:40%; margin-left:150px">
+          <v-col>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/oluwamayowa-oseni-b04011172/"
+            >
+              <v-img
+                height="20px"
+                width="20px"
+                class="mt-4"
+                src="../assets/svgs/linkedin.svg"
+              ></v-img>
+            </a>
+          </v-col>
+          <v-col>
+            <a target="_blank" href="https://twitter.com/Mayowa_titi">
+              <v-img
+                height="20px"
+                width="20px"
+                class="mt-4"
+                src="../assets/svgs/twitter.svg"
+              ></v-img>
+            </a>
+          </v-col>
+          <v-col>
+            <a target="_blank" href="https://instagram.com/mayowa_titi">
+              <v-img
+                height="20px"
+                width="20px"
+                class="mt-4"
+                src="../assets/svgs/instagram.svg"
+              ></v-img>
+            </a>
+          </v-col>
+        </v-row>
+      </div>
+    </div> -->
     <v-navigation-drawer v-model="drawer" app permanent expand-on-hover>
       <v-list>
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-img
-              src="https://randomuser.me/api/portraits/women/85.jpg"
-            ></v-img>
+            <v-img src="./assets/me-main.jpg"></v-img>
           </v-list-item-avatar>
         </v-list-item>
 
@@ -18,6 +55,45 @@
             <v-list-item-subtitle style="color:black"
               >oluwamayowaoseni12@gmail.com</v-list-item-subtitle
             >
+            <v-list-item-subtitle>
+              <div style=" width:100%">
+                <v-row>
+                  <v-col>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/oluwamayowa-oseni-b04011172/"
+                    >
+                      <v-img
+                        height="20px"
+                        width="20px"
+                        class="mt-4"
+                        src="./assets/svgs/linkedin.svg"
+                      ></v-img>
+                    </a>
+                  </v-col>
+                  <v-col>
+                    <a target="_blank" href="https://twitter.com/Mayowa_titi">
+                      <v-img
+                        height="20px"
+                        width="20px"
+                        class="mt-4"
+                        src="./assets/svgs/twitter.svg"
+                      ></v-img>
+                    </a>
+                  </v-col>
+                  <v-col>
+                    <a target="_blank" href="https://instagram.com/mayowa_titi">
+                      <v-img
+                        height="20px"
+                        width="20px"
+                        class="mt-4"
+                        src="./assets/svgs/instagram.svg"
+                      ></v-img>
+                    </a>
+                  </v-col>
+                </v-row>
+              </div>
+            </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -50,7 +126,7 @@ export default {
   data: () => ({
     drawer: null,
     items: [
-      { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
+      { title: 'Home', icon: 'mdi-view-dashboard', to: '/' },
       { title: 'About', icon: 'mdi-help-box', to: '/about' },
     ],
   }),
@@ -63,14 +139,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #8b008b;
 }
 
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
-    color: #8b008b;
 
     &.router-link-exact-active {
       color: #42b983;
@@ -78,7 +152,11 @@ export default {
   }
 }
 .v-navigation-drawer {
-  background: #8b008b !important;
+  // background: #8a2be2 #grad {
+  background-image: linear-gradient(to right, #d8bfd8, #778899) !important;
+  // background-image: url('./assets/africa2.jpg');
+  // background-size: contain;
+  // background-size: cover;
 }
 // .nav{
 
