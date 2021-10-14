@@ -43,7 +43,7 @@
       <v-list>
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-img src="./assets/me-main.jpg"></v-img>
+            <v-img src="./assets/photos/me/myshot.jpg"></v-img>
           </v-list-item-avatar>
         </v-list-item>
 
@@ -52,8 +52,10 @@
             <v-list-item-title class="text-h6" style="color:#fff">
               Mayowa Oseni
             </v-list-item-title>
-            <v-list-item-subtitle style="color:black"
-              >oluwamayowaoseni12@gmail.com</v-list-item-subtitle
+            <v-list-item-subtitle style="color:black">
+              <a href="/contact-me">
+                oluwamayowaoseni12@gmail.com
+              </a></v-list-item-subtitle
             >
             <v-list-item-subtitle>
               <div style=" width:100%">
