@@ -133,7 +133,7 @@ export default {
     ],
   }),
   methods: {
-    goToContaxtMe() {
+    goToContactMe() {
       this.$router.push('/contact-me')
     },
   },
