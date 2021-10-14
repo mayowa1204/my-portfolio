@@ -53,7 +53,7 @@
               Mayowa Oseni
             </v-list-item-title>
             <v-list-item-subtitle style="color:black">
-              <a href="/contact-me">
+              <a href="" @click="goToContactMe">
                 oluwamayowaoseni12@gmail.com
               </a></v-list-item-subtitle
             >
@@ -132,6 +132,11 @@ export default {
       { title: 'About', icon: 'mdi-help-box', to: '/about' },
     ],
   }),
+  methods: {
+    goToContaxtMe() {
+      this.$router.push('/contact-me')
+    },
+  },
 }
 </script>
 
