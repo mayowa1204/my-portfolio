@@ -1,44 +1,5 @@
 <template>
   <v-app id="inspire">
-    <!-- <div class="nav" style=" height:8vh; width:90%; float:right; background:#E6E6FA">
-      <div style=" width:25%; float:right">
-        <v-row style=" width:40%; margin-left:150px">
-          <v-col>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/oluwamayowa-oseni-b04011172/"
-            >
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/linkedin.svg"
-              ></v-img>
-            </a>
-          </v-col>
-          <v-col>
-            <a target="_blank" href="https://twitter.com/Mayowa_titi">
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/twitter.svg"
-              ></v-img>
-            </a>
-          </v-col>
-          <v-col>
-            <a target="_blank" href="https://instagram.com/mayowa_titi">
-              <v-img
-                height="20px"
-                width="20px"
-                class="mt-4"
-                src="../assets/svgs/instagram.svg"
-              ></v-img>
-            </a>
-          </v-col>
-        </v-row>
-      </div>
-    </div> -->
     <v-navigation-drawer v-model="drawer" app permanent expand-on-hover>
       <v-list>
         <v-list-item class="px-2">
@@ -53,7 +14,7 @@
               Mayowa Oseni
             </v-list-item-title>
             <v-list-item-subtitle style="color:black">
-              <a href="" @click="goToContactMe">
+              <a @click="goToContactMe">
                 oluwamayowaoseni12@gmail.com
               </a></v-list-item-subtitle
             >
