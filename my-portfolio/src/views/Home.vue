@@ -25,9 +25,17 @@
                     I'm Mayowa
                   </h2>
                   <p style="font-size:20px; text-align: justify;" class="mt-4">
-                    I am an Engineer, and a full stack javascript developer. A
-                    jack of all trades is a master of none but still much better
-                    than a master of one.
+                    I am an Engineer, and a full stack javascript developer.
+                  </p>
+                  <h3
+                    class="mt-3"
+                    style=" line-height: 1.2;text-align: justify;"
+                  >
+                    Favorite Quote:
+                  </h3>
+                  <p style="font-size:20px; text-align: justify;" class="mt-2">
+                    A jack of all trades is a master of none but still much
+                    better than a master of one.
                   </p>
                 </div>
               </v-col>
@@ -54,44 +62,51 @@
       >
         <v-card
           class="mt-10 card"
-          style="height:62vh; width:95%; background:	#FDF5E6;border-radius:20px"
+          style="height:62vh; width:95%; background:	#FDF5E6;border-radius:30px"
         >
           <v-card-text style="height:100%">
             <v-row class="mx-auto" style="height:100%">
               <v-col cols="12" md="6" class="about">
-                <h1 style="font-size:30px; margin-top:160px" class="about-me">
-                  About Me
-                </h1>
-                <hr
-                  style=" width: 20%;  height: 8px; background:	#C71585"
-                  class=" mt-4 mx-auto"
-                />
-              </v-col>
-              <v-col cols="12" md="6">
-                <p
-                  style="font-size:20px; margin-top:55px; text-align: justify;"
+                <div
+                  class="box-2 about-me"
+                  style="font-size:24px; margin-top:140px"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima, eius provident atque quasi recusandae fugiat numquam
-                  incidunt laudantium quia culpa error placeat nemo veritatis
-                  officia aspernatur rerum praesentium voluptatibus aliquid?
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                  sequi dignissimos ducimus numquam fugit perspiciatis,
-                </p>
+                  <div class="btn btn-two mx-auto">
+                    <span class="mt-10 btn-text">About Me</span>
+                  </div>
+                </div>
+              </v-col>
+              <v-col class="about-text" cols="12" md="6">
+                <div style="width:100%; height:70%">
+                  <p
+                    style="font-size:20px; margin-top:55px; text-align: justify;"
+                  >
+                    My full name is Oluwamayowa Titilopemi Oseni, I am a 22 year
+                    old engineering graduate originally from Nigeria. I have a
+                    BSc in Mechanical Engineering, and an MSc in Renewable
+                    Energy Engineering, and I have recently worked as a software
+                    delevloper at a tech startup.
+                  </p>
+                </div>
 
-                <v-row style="width:100%" class="mt-6">
-                  <v-col cols="6">
-                    <v-btn style="background:	#C71585" rounded @click="goToAbout"
+                <v-row style="width:50%; height:30%" class="buttons mx-auto">
+                  <v-col cols="6" class="mx-auto">
+                    <v-btn
+                      style="background:	#C71585;  width:100%; text-transform:capitalize"
+                      rounded
+                      @click="goToAbout"
                       >Read more</v-btn
                     >
                   </v-col>
-                  <v-col cols="6">
+                  <v-col cols="6" class="mx-auto">
                     <a
                       download="CV.pdf"
                       class="pdf"
                       :href="require('../../public/assets/CV.pdf')"
                     >
-                      <v-btn style="background:	#C71585" rounded
+                      <v-btn
+                        style="background:	#C71585; width:100%; text-transform:capitalize"
+                        rounded
                         >Download CV
                       </v-btn>
                     </a>
@@ -113,11 +128,13 @@
           class="mt-10 card"
           style="height:62vh; width:95%;  background:	#FDF5E6;border-radius:200px"
         >
-          <v-card-text class="mt-6 mx-auto" style=" width:70%">
+          <v-card-text class="mt-6 mx-auto skills" style=" width:70%">
             <h2>Skills</h2>
             <p class="mt-3" style="font-size:16px">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus deserunt repellendus perspiciatis veritatis.
+              I have listed a few of my key web development skills. I have
+              really enjoyed learning and growing in JavaScript and looking
+              forward to mastering it. I am exited about exporing other
+              programing languages and frameworks as well.
             </p>
           </v-card-text>
           <v-card-text style="height:60%">
@@ -125,7 +142,7 @@
               <v-carousel
                 hide-delimiters
                 style="height:100%; width:50%"
-                class="mx-auto mt-n2"
+                class="mx-auto mt-n2 slider"
               >
                 <v-carousel-item v-for="(skill, i) in skills" :key="i">
                   <v-sheet height="100%" tile color="#FDF5E6">
@@ -157,7 +174,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 export default {
   name: 'Home',
   data: () => ({
@@ -210,6 +226,65 @@ a {
   text-decoration: none;
   color: black !important;
 }
+.box-2 {
+  background-color: #fdf5e6;
+}
+.btn {
+  line-height: 50px;
+  height: 150px;
+  text-align: center;
+  width: 350px;
+  cursor: pointer;
+}
+
+.btn-two {
+  color: black;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-two span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid #c71585;
+  background-color: #fdf5e6;
+}
+
+span:hover {
+  color: #fff;
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgb(165, 131, 165);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: #ddb9d7;
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .home {
     height: 90vh !important;
@@ -234,16 +309,54 @@ a {
     margin-left: -10px !important;
     margin: auto !important;
   }
+  .slider {
+    width: 95% !important;
+    height: 80% !important;
+    margin-left: 15px !important;
+    margin-top: 20px !important;
+  }
+  .skills {
+    height: 35% !important;
+    width: 92% !important;
+  }
+  .buttons {
+    width: 100% !important;
+    height: 15% !important;
+  }
+  .btn {
+    line-height: 50px;
+    height: 60px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .btn-text {
+    margin-top: 5px !important;
+    font-size: 20px !important;
+  }
   .picture {
-    margin-left: 80px !important;
-    margin-top: -10px !important;
-    height: 100px !important;
-    width: 100px !important;
+    margin-left: 65px !important;
+    margin-top: -20px !important;
+    height: 120px !important;
+    width: 120px !important;
   }
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .home {
     height: 90vh !important;
+  }
+  .btn {
+    line-height: 50px;
+    height: 60px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .btn-text {
+    margin-top: 5px !important;
+    font-size: 20px !important;
   }
   .card {
     margin-top: 40px;
@@ -262,11 +375,25 @@ a {
     margin-top: -2px !important;
     margin-top: 40px !important;
   }
+  .slider {
+    width: 95% !important;
+    height: 80% !important;
+    margin-left: 15px !important;
+    margin-top: 20px !important;
+  }
+  .skills {
+    height: 35% !important;
+    width: 92% !important;
+  }
 
   .picture {
     margin-left: 50px !important;
     height: 200px !important;
     width: 200px !important;
+  }
+  .buttons {
+    width: 95% !important;
+    height: 15% !important;
   }
   .greeting {
     margin-top: 70px;
@@ -291,12 +418,44 @@ a {
   .about {
     height: 10vh;
   }
+  .btn {
+    line-height: 50px;
+    height: 60px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .btn-text {
+    margin-top: 5px !important;
+    font-size: 20px !important;
+  }
+  .buttons {
+    width: 95% !important;
+    height: 15% !important;
+  }
   .about-me {
     font-size: 24px;
     margin-top: -2px !important;
-    margin-top: 40px !important;
+    margin-top: 60px !important;
   }
+  .slider {
+    width: 95% !important;
+    height: 80% !important;
+    margin-left: 15px !important;
+    margin-top: 20px !important;
+  }
+  .skills {
+    height: 35% !important;
+    width: 92% !important;
+  }
+  .about-text {
+    margin-top: -70px !important;
+  }
+
   .picture {
+    margin-left: 30px !important;
+    margin-top: 30px !important;
     height: 200px !important;
     width: 200px !important;
   }
@@ -317,14 +476,27 @@ a {
     margin-left: -10px !important;
     margin: auto !important;
   }
+  .btn {
+    line-height: 50px;
+    height: 60px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .btn-text {
+    margin-top: 5px !important;
+    font-size: 20px !important;
+  }
   .about-me {
     font-size: 24px;
     margin-top: -2px !important;
-    margin-top: 40px !important;
+    margin-top: 60px !important;
   }
   .greeting {
     margin-top: 70px;
   }
+
   .picture {
     height: 200px !important;
     width: 200px !important;

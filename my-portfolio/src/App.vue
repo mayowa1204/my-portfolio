@@ -120,13 +120,6 @@ export default {
   }
 }
 .v-navigation-drawer {
-  // background: #8a2be2 #grad {
   background-image: linear-gradient(to right, #d8bfd8, #778899) !important;
-  // background-image: url('./assets/africa2.jpg');
-  // background-size: contain;
-  // background-size: cover;
 }
-// .nav{
-
-// }
 </style>

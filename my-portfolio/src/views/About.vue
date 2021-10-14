@@ -3,13 +3,13 @@
     <section class="mx-auto" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6;"
+          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
           class="mx-auto mt-10"
         >
           <v-card-text>
             <v-row style="height:90%" wrap no-gutters>
-              <v-col cols="12" md="6" class="image">
+              <v-col cols="12" md="6" class="image mx-auto">
                 <v-row class="mx-auto mt-10 " style="height:90%; width:100%">
                   <v-carousel
                     hide-delimiters
@@ -40,8 +40,16 @@
               </v-col>
               <v-col cols="12" md="6" class="text" style="height:100%">
                 <div class="mx-auto" style="width:90%">
-                  <h2 class="mt-5" style="text-align:center">More About Me</h2>
-                  <p class="mt-5" style="text-align:justify">
+                  <h2
+                    class="heading mt-5 underline-to-top "
+                    style="text-align:center"
+                  >
+                    More About Me
+                  </h2>
+                  <p
+                    class="paragraph mt-10"
+                    style="text-align:justify; font-size:20px; line-height:1.8"
+                  >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Odio natus numquam quia eaque voluptate cumque? Tempore
                     debitis voluptates saepe facilis ea eum! Blanditiis dolorum
@@ -57,7 +65,7 @@
     <section class="mx-auto" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6;"
+          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
           class="mx-auto mt-10"
         >
@@ -75,8 +83,30 @@
               </v-col>
               <v-col cols="12" md="6" class="text">
                 <div class="mx-auto" style="width:90%">
-                  <h2 class="mt-5" style="text-align:center">Education</h2>
-                  <p class="mt-5" style="text-align:justify">
+                  <h2 class="heading education mt-5" style="text-align:center">
+                    Education
+                  </h2>
+                  <h3 class="mt-7">
+                    Masters:
+                  </h3>
+                  <p class="paragraph2" style="font-size:16px;">
+                    MSc. Renewable Energy Engineering. <br />
+                    University of Exeter
+                  </p>
+                  <h3>
+                    Bachelors:
+                  </h3>
+                  <p class="paragraph2" style="font-size:16px;">
+                    BSc. Mechanical Engineering. <br />
+                    University of Mines and Technology
+                  </p>
+                  <h3>
+                    Key Modules:
+                  </h3>
+                  <p
+                    class="paragraph2"
+                    style="text-align:justify; font-size:16px;"
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nemo nisi vel laborum quisquam, repellat ab reprehenderit ea
                     excepturi expedita? Autem numquam perferendis dicta veniam
@@ -92,13 +122,13 @@
     <section style="height:70vh;">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6;"
+          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
           class="mx-auto mt-10"
         >
           <v-card-text>
             <v-row style="height:90%">
-              <v-col cols="12" md="6" class=" image">
+              <v-col cols="12" md="6" class="image mx-auto">
                 <v-row class="mx-auto mt-10 " style="height:90%; width:100%">
                   <v-carousel
                     hide-delimiters
@@ -129,12 +159,20 @@
               </v-col>
               <v-col cols="12" md="6" class="text">
                 <div class="mx-auto" style="width:90%">
-                  <h2 class="mt-5" style="text-align:center">Hobbies</h2>
-                  <p class="mt-5" style="text-align:jsutify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Cum nemo asperiores non ipsa doloremque praesentium expedita
-                    unde consectetur nam! Consequuntur facilis quae quibusdam
-                    molestiae rem accusantium qui nostrum quis exercitationem!
+                  <h2 class="heading mt-5" style="text-align:center">
+                    Hobbies
+                  </h2>
+                  <p
+                    class="paragraph mt-10"
+                    style="text-align:jsutify; font-size:20px; line-height:1.8"
+                  >
+                    I am not a typical girly girl, I love out door activities
+                    like hiking and climbing, completing obstacle courses,
+                    visting wild life reserves and traveling which i'll dive
+                    deep into in the next section. My second love is music. I
+                    wish i would study music some time later in life, i am
+                    fascinated with the art and the amount of hard work and
+                    dedication it takes to produce a good piece
                   </p>
                 </div>
               </v-col>
@@ -146,13 +184,13 @@
     <section class="mx-auto" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6;"
+          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
           class="mx-auto mt-10"
         >
           <v-card-text>
             <v-row style="height:90%">
-              <v-col cols="12" md="6" class=" image">
+              <v-col cols="12" md="6" class="image mx-auto">
                 <v-row class="mx-auto mt-10 " style="height:90%; width:100%">
                   <v-carousel
                     hide-delimiters
@@ -183,8 +221,11 @@
               </v-col>
               <v-col cols="12" md="6" class="text">
                 <div class="mx-auto" style="width:90%">
-                  <h2 class="mt-5" style="text-align:center">Travel</h2>
-                  <p class="mt-5" style="text-align:justify">
+                  <h2 class="heading mt-5" style="text-align:center">Travel</h2>
+                  <p
+                    class="paragraph mt-10"
+                    style="text-align:justify; font-size:20px; line-height:1.8"
+                  >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Debitis quibusdam perferendis illum distinctio, qui fugit
                     alias sint maiores nobis deserunt impedit eligendi
@@ -242,11 +283,47 @@ export default {
 }
 </script>
 <style>
+.underline-to-top {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.underline-to-top:hover {
+  background-size: 100% 88%;
+}
+.heading {
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.heading:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(220, 95, 192);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.heading:hover:after {
+  width: 100%;
+  left: 0;
+}
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .image {
     height: 30vh;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   .education {
     height: 30%;
@@ -259,11 +336,26 @@ export default {
     height: 100px !important;
     width: 100px !important;
   }
+  .paragraph {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+  .paragraph2 {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+  }
+  .heading {
+    margin-bottom: -25px !important;
+    margin-top: -30px !important;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .image {
     height: 30vh;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   .education {
     height: 30%;
@@ -274,12 +366,27 @@ export default {
   .picture {
     height: 100px !important;
     width: 100px !important;
+  }
+  .paragraph {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+  .paragraph2 {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+  .heading {
+    margin-bottom: -25px !important;
+    margin-top: -30px !important;
+  }
+  h3 {
+    font-size: 16px;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .image {
     height: 30vh;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   .education {
     height: 30%;
@@ -291,11 +398,26 @@ export default {
     height: 100px !important;
     width: 100px !important;
   }
+  .paragraph {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+  .paragraph2 {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+  .heading {
+    margin-bottom: -25px !important;
+    margin-top: -30px !important;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .image {
     height: 35vh;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   .education {
     height: 30%;
@@ -306,6 +428,21 @@ export default {
   .picture {
     height: 200px !important;
     width: 200px !important;
+  }
+  .paragraph {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+  .paragraph2 {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+  .heading {
+    margin-bottom: -25px !important;
+    margin-top: -30px !important;
+  }
+  h3 {
+    font-size: 16px;
   }
 }
 </style>

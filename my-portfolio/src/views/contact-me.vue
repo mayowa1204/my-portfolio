@@ -69,6 +69,7 @@
 
               <v-row class="mx-auto " style=" width:50%">
                 <v-btn
+                  :disabled="!isValid"
                   rounded
                   style="background:	#C71585"
                   class="mx-auto mt-2 mb-2 "
@@ -106,6 +107,7 @@ export default {
     email: '',
     message: '',
     snackbar: false,
+    isValid: false,
   }),
 
   computed: {
@@ -157,16 +159,14 @@ export default {
               message: this.message,
             },
           )
-
-          .then(response => {
-            console.log(response)
+          .then(() => {
             this.name = ''
             this.email = ''
             this.message = ''
             this.snackbar = true
           })
       } catch (error) {
-        console.log({ error })
+        throw new Error(error)
       }
     },
   },
