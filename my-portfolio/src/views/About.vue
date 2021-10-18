@@ -3,8 +3,7 @@
     <section class="mx-auto card" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
-          elevation="0"
+          style="width:90%; height:90%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:30px"
           class="mx-auto mt-10"
         >
           <v-card-text>
@@ -17,7 +16,11 @@
                     class="mx-auto mt-n2"
                   >
                     <v-carousel-item v-for="(image, i) in me" :key="i">
-                      <v-sheet height="70%" tile color="#FDF5E6">
+                      <v-sheet
+                        height="70%"
+                        tile
+                        style="background-color:transparent"
+                      >
                         <v-row
                           class="fill-height"
                           align="center"
@@ -65,8 +68,7 @@
     <section class="mx-auto card" style="height:70vh">
       <v-row class="mx-auto " style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
-          elevation="0"
+          style="width:90%; height:90%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:30px"
           class="mx-auto mt-10 card"
         >
           <v-card-text>
@@ -134,8 +136,7 @@
     <section style="height:70vh;" class="card">
       <v-row class="mx-auto hobbies" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
-          elevation="0"
+          style="width:90%; height:90%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:30px"
           class="mx-auto mt-10"
         >
           <v-card-text>
@@ -148,7 +149,11 @@
                     class="mx-auto mt-n2"
                   >
                     <v-carousel-item v-for="(hobby, i) in hobbies" :key="i">
-                      <v-sheet height="70%" tile color="#FDF5E6">
+                      <v-sheet
+                        height="70%"
+                        tile
+                        style="background-color:transparent"
+                      >
                         <v-row
                           class="fill-height"
                           align="center"
@@ -199,8 +204,7 @@
     <section class="mx-auto card" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
-          style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
-          elevation="0"
+          style="width:90%; height:90%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:30px"
           class="mx-auto mt-10"
         >
           <v-card-text>
@@ -213,7 +217,11 @@
                     class="mx-auto mt-n2"
                   >
                     <v-carousel-item v-for="(travel, i) in travels" :key="i">
-                      <v-sheet height="70%" tile color="#FDF5E6">
+                      <v-sheet
+                        height="70%"
+                        tile
+                        style="background-color:transparent"
+                      >
                         <v-row
                           class="fill-height"
                           align="center"

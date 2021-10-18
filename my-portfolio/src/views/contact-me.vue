@@ -20,7 +20,7 @@
           </h4>
         </v-snackbar>
         <v-card
-          style="width:60%; height:65%; margin-top:150px; background:#FDF5E6; border-radius:30px"
+          style="width:60%; height:65%; margin-top:150px; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:30px"
           class="mx-auto card"
         >
           <v-card-title style=" width:100%; height:20%; justify-content:center">
