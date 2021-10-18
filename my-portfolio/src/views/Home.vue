@@ -8,7 +8,7 @@
       >
         <v-card
           class="mt-10 card"
-          style="height:62vh; width:95%; background:	#FDF5E6; border-radius:200px"
+          style="height:62vh; width:95%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); border-radius:200px"
         >
           <v-card-text style="height:100%">
             <v-row class="mx-auto" style="height:100%;" wrap no-gutters>
@@ -68,14 +68,14 @@
       >
         <v-card
           class="mt-10 card"
-          style="height:62vh; width:95%; background:	#FDF5E6;border-radius:30px"
+          style="height:62vh; width:95%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);;border-radius:30px"
         >
           <v-card-text style="height:100%">
             <v-row class="mx-auto" style="height:100%">
               <v-col cols="12" md="6" class="about">
                 <div
                   class="box-2 about-me"
-                  style="font-size:24px; margin-top:140px"
+                  style="font-size:24px; margin-top:140px; background-color:transparent"
                 >
                   <div class="btn btn-two mx-auto">
                     <span class="mt-10 btn-text" style="color:#4B0082"
@@ -136,7 +136,7 @@
       >
         <v-card
           class="mt-10 card"
-          style="height:62vh; width:95%;  background:	#FDF5E6;border-radius:200px"
+          style="height:62vh; width:95%; background-image: linear-gradient(to right, #e6e6fa, white); box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);border-radius:200px"
         >
           <v-card-text class="mt-6 mx-auto skills" style=" width:70%">
             <h2 style="color:#4B0082">Skills</h2>
@@ -155,7 +155,11 @@
                 class="mx-auto mt-n2 slider"
               >
                 <v-carousel-item v-for="(skill, i) in skills" :key="i">
-                  <v-sheet height="100%" tile color="#FDF5E6">
+                  <v-sheet
+                    height="100%"
+                    tile
+                    style="background-color:transparent"
+                  >
                     <v-row
                       class="fill-height"
                       align="center"
@@ -281,7 +285,7 @@ a {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid #c71585;
-  background-color: #fdf5e6;
+  background-color: transparent;
 }
 
 span:hover {

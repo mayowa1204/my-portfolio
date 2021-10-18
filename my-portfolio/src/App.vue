@@ -22,6 +22,16 @@
               <div style=" width:100%">
                 <v-row>
                   <v-col>
+                    <a target="_blank" href="https://github.com/mayowa1204">
+                      <v-img
+                        height="20px"
+                        width="20px"
+                        class="mt-4"
+                        src="./assets/svgs/github.svg"
+                      ></v-img>
+                    </a>
+                  </v-col>
+                  <v-col>
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/in/oluwamayowa-oseni-b04011172/"
