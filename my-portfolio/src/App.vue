@@ -10,11 +10,11 @@
 
         <v-list-item link>
           <v-list-item-content>
-            <v-list-item-title class="text-h6" style="color:#fff">
+            <v-list-item-title class="text-h6" style="color:black">
               Mayowa Oseni
             </v-list-item-title>
-            <v-list-item-subtitle style="color:black">
-              <a @click="goToContactMe">
+            <v-list-item-subtitle>
+              <a @click="goToContactMe" style="color:black">
                 oluwamayowaoseni12@gmail.com
               </a></v-list-item-subtitle
             >
@@ -76,17 +76,16 @@
       <v-list dense nav>
         <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
           <v-list-item-icon>
-            <v-icon style="color:#fff">{{ item.icon }}</v-icon>
+            <v-icon style="color:black">{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title style="color:#fff">{{
+            <v-list-item-title style="color:black">{{
               item.title
             }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <!--  -->
     </v-navigation-drawer>
 
     <v-main>

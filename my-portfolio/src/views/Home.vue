@@ -101,7 +101,7 @@
                   <v-col cols="6" class="mx-auto">
                     <v-btn
                       style="background:#C71585; width:100%; text-transform:capitalize"
-                      color="#4B0082"
+                      class="button"
                       rounded
                       @click="goToAbout"
                       >Read more</v-btn
@@ -114,8 +114,8 @@
                       :href="require('../../public/assets/CV.pdf')"
                     >
                       <v-btn
+                        class="button"
                         style="background:	#C71585; width:100%; text-transform:capitalize"
-                        color="#4B0082"
                         rounded
                         >Download CV
                       </v-btn>
@@ -235,6 +235,9 @@ export default {
 }
 </script>
 <style scoped>
+.button {
+  color: #4b0082 !important;
+}
 a,
 a {
   text-decoration: none;
