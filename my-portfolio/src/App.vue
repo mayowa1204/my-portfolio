@@ -13,8 +13,9 @@
             <v-list-item-title class="text-h6" style="color:black">
               Mayowa Oseni
             </v-list-item-title>
-            <v-list-item-subtitle>
-              <a @click="goToContactMe" style="color:black">
+            <v-list-item-subtitle style="color:blue; font-size:16px">
+              Email Me:
+              <a @click="goToContactMe" style="color:blue">
                 oluwamayowaoseni12@gmail.com
               </a></v-list-item-subtitle
             >
