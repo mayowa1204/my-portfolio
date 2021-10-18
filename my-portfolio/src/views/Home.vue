@@ -19,21 +19,27 @@
                 >
                   <h2
                     class="greeting"
-                    style="font-size:30px; line-height: 1.2;text-align: justify;"
+                    style="font-size:30px; line-height: 1.2;text-align: justify; color:#4B0082"
                   >
                     Hi, <br />
                     I'm Mayowa
                   </h2>
-                  <p style="font-size:20px; text-align: justify;" class="mt-4">
+                  <p
+                    style="font-size:20px; text-align: justify; color:#4B0082"
+                    class="mt-4"
+                  >
                     I am an Engineer, and a full stack javascript developer.
                   </p>
                   <h3
                     class="mt-3"
-                    style=" line-height: 1.2;text-align: justify;"
+                    style=" line-height: 1.2;text-align: justify; color:#4B0082"
                   >
                     Favorite Quote:
                   </h3>
-                  <p style="font-size:20px; text-align: justify;" class="mt-2">
+                  <p
+                    style="font-size:20px; text-align: justify; color:#4B0082"
+                    class="mt-2"
+                  >
                     A jack of all trades is a master of none but still much
                     better than a master of one.
                   </p>
@@ -72,14 +78,16 @@
                   style="font-size:24px; margin-top:140px"
                 >
                   <div class="btn btn-two mx-auto">
-                    <span class="mt-10 btn-text">About Me</span>
+                    <span class="mt-10 btn-text" style="color:#4B0082"
+                      >About Me</span
+                    >
                   </div>
                 </div>
               </v-col>
               <v-col class="about-text" cols="12" md="6">
-                <div style="width:100%; height:70%">
+                <div style="width:95%; height:70%">
                   <p
-                    style="font-size:20px; margin-top:55px; text-align: justify;"
+                    style="font-size:20px; margin-top:55px; text-align: justify; line-height:1.5;color:#4B0082"
                   >
                     My full name is Oluwamayowa Titilopemi Oseni, I am a 22 year
                     old engineering graduate originally from Nigeria. I have a
@@ -92,7 +100,8 @@
                 <v-row style="width:50%; height:30%" class="buttons mx-auto">
                   <v-col cols="6" class="mx-auto">
                     <v-btn
-                      style="background:	#C71585;  width:100%; text-transform:capitalize"
+                      style="background:#C71585; width:100%; text-transform:capitalize"
+                      color="#4B0082"
                       rounded
                       @click="goToAbout"
                       >Read more</v-btn
@@ -106,6 +115,7 @@
                     >
                       <v-btn
                         style="background:	#C71585; width:100%; text-transform:capitalize"
+                        color="#4B0082"
                         rounded
                         >Download CV
                       </v-btn>
@@ -129,8 +139,8 @@
           style="height:62vh; width:95%;  background:	#FDF5E6;border-radius:200px"
         >
           <v-card-text class="mt-6 mx-auto skills" style=" width:70%">
-            <h2>Skills</h2>
-            <p class="mt-3" style="font-size:16px">
+            <h2 style="color:#4B0082">Skills</h2>
+            <p class="mt-3" style="font-size:16px;color:#4B0082">
               I have listed a few of my key web development skills. I have
               really enjoyed learning and growing in JavaScript and looking
               forward to mastering it. I am exited about exporing other

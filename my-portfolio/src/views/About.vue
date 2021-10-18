@@ -1,6 +1,6 @@
 <template>
   <div style=" background-image: linear-gradient(to right, #e6e6fa, white);">
-    <section class="mx-auto" style="height:70vh">
+    <section class="mx-auto card" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
           style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
@@ -39,16 +39,16 @@
                 </v-row>
               </v-col>
               <v-col cols="12" md="6" class="text" style="height:100%">
-                <div class="mx-auto" style="width:90%">
+                <div class="mx-auto" style="width:90%;text-align:center">
                   <h2
-                    class="heading mt-5 underline-to-top "
-                    style="text-align:center"
+                    class="heading mt-5 underline-to-top"
+                    style="text-align:center; color:#4B0082"
                   >
                     More About Me
                   </h2>
                   <p
                     class="paragraph mt-10"
-                    style="text-align:justify; font-size:20px; line-height:1.8"
+                    style="text-align:justify; font-size:20px; line-height:1.8; color:#4B0082"
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Odio natus numquam quia eaque voluptate cumque? Tempore
@@ -62,12 +62,12 @@
         </v-card>
       </v-row>
     </section>
-    <section class="mx-auto" style="height:70vh">
-      <v-row class="mx-auto" style="height:100%">
+    <section class="mx-auto card" style="height:70vh">
+      <v-row class="mx-auto " style="height:100%">
         <v-card
           style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
-          class="mx-auto mt-10"
+          class="mx-auto mt-10 card"
         >
           <v-card-text>
             <v-row style="height:90%">
@@ -82,35 +82,47 @@
                 </v-img>
               </v-col>
               <v-col cols="12" md="6" class="text">
-                <div class="mx-auto" style="width:90%">
-                  <h2 class="heading education mt-5" style="text-align:center">
+                <div class="mx-auto" style="width:90%; text-align:center">
+                  <h2
+                    class="heading education mt-5 underline-to-top"
+                    style="text-align:center; color:#4B0082"
+                  >
                     Education
                   </h2>
-                  <h3 class="mt-7">
+                  <h3 class="mt-7" style="text-align:justify; color:#4B0082">
                     Masters:
                   </h3>
-                  <p class="paragraph2" style="font-size:16px;">
+                  <p
+                    class="paragraph2"
+                    style="font-size:16px; text-align:justify; color:#4B0082"
+                  >
                     MSc. Renewable Energy Engineering. <br />
                     University of Exeter
                   </p>
-                  <h3>
+                  <h3 style="text-align:justify; color:#4B0082">
                     Bachelors:
                   </h3>
-                  <p class="paragraph2" style="font-size:16px;">
+                  <p
+                    class="paragraph2"
+                    style="font-size:16px; text-align:justify; color:#4B0082"
+                  >
                     BSc. Mechanical Engineering. <br />
                     University of Mines and Technology
                   </p>
-                  <h3>
+                  <h3 style="text-align:justify; color:#4B0082">
                     Key Modules:
                   </h3>
                   <p
                     class="paragraph2"
-                    style="text-align:justify; font-size:16px;"
+                    style="text-align:justify; font-size:16px; line-height:1.5; color:#4B0082"
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nemo nisi vel laborum quisquam, repellat ab reprehenderit ea
-                    excepturi expedita? Autem numquam perferendis dicta veniam
-                    sint, quod aspernatur reiciendis ex rem?
+                    Wind Energy Technology,Renewable heating, as well as
+                    Hydropower, Geothermal Energy. Themes in Climate Change,
+                    Sustainable Architecture, Solar Research and Low Carbon
+                    Vehicles. Materials design, Thermodynamics, Hydraulic
+                    machinery, Fluid Mechanics Machine Design, Ethics in
+                    Science, Business Entrepreneurship, Computer Aided Design
+                    (AutoCad, Solidworks)
                   </p>
                 </div></v-col
               >
@@ -119,8 +131,8 @@
         </v-card>
       </v-row>
     </section>
-    <section style="height:70vh;">
-      <v-row class="mx-auto" style="height:100%">
+    <section style="height:70vh;" class="card">
+      <v-row class="mx-auto hobbies" style="height:100%">
         <v-card
           style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
           elevation="0"
@@ -158,13 +170,16 @@
                 </v-row>
               </v-col>
               <v-col cols="12" md="6" class="text">
-                <div class="mx-auto" style="width:90%">
-                  <h2 class="heading mt-5" style="text-align:center">
+                <div class="mx-auto " style="width:90%;text-align:center">
+                  <h2
+                    class="heading mt-5 underline-to-top"
+                    style="text-align:center; color:#4B0082"
+                  >
                     Hobbies
                   </h2>
                   <p
                     class="paragraph mt-10"
-                    style="text-align:jsutify; font-size:20px; line-height:1.8"
+                    style=" font-size:20px; line-height:1.8;text-align:justify; color:#4B0082"
                   >
                     I am not a typical girly girl, I love out door activities
                     like hiking and climbing, completing obstacle courses,
@@ -181,7 +196,7 @@
         </v-card>
       </v-row>
     </section>
-    <section class="mx-auto" style="height:70vh">
+    <section class="mx-auto card" style="height:70vh">
       <v-row class="mx-auto" style="height:100%">
         <v-card
           style="width:90%; height:90%; background:#FDF5E6; border-radius:30px"
@@ -220,11 +235,16 @@
                 </v-row>
               </v-col>
               <v-col cols="12" md="6" class="text">
-                <div class="mx-auto" style="width:90%">
-                  <h2 class="heading mt-5" style="text-align:center">Travel</h2>
+                <div class="mx-auto" style="width:90%; text-align:center">
+                  <h2
+                    class="heading mt-5 underline-to-top"
+                    style="text-align:center; color:#4B0082"
+                  >
+                    Travel
+                  </h2>
                   <p
                     class="paragraph mt-10"
-                    style="text-align:justify; font-size:20px; line-height:1.8"
+                    style="text-align:justify; font-size:20px; line-height:1.8; color:#4B0082"
                   >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Debitis quibusdam perferendis illum distinctio, qui fugit
@@ -351,6 +371,12 @@ export default {
   h3 {
     font-size: 16px;
   }
+  .card {
+    height: 90vh !important;
+  }
+  .hobbies {
+    margin-top: 40px !important;
+  }
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .image {
@@ -381,6 +407,12 @@ export default {
   }
   h3 {
     font-size: 16px;
+  }
+  .card {
+    height: 90vh !important;
+  }
+  .hobbies {
+    margin-top: 40px !important;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
@@ -413,6 +445,12 @@ export default {
   h3 {
     font-size: 16px;
   }
+  .card {
+    height: 90vh !important;
+  }
+  .hobbies {
+    margin-top: 40px !important;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .image {
@@ -443,6 +481,12 @@ export default {
   }
   h3 {
     font-size: 16px;
+  }
+  .card {
+    height: 90vh !important;
+  }
+  .hobbies {
+    margin-top: 40px !important;
   }
 }
 </style>
